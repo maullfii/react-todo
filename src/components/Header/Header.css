@@ -1,0 +1,9 @@
+.headerContainer {
+	display: flex;
+	justify-content: center;
+}
+
+.title {
+	font-size: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+}

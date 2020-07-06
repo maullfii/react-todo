@@ -1,0 +1,22 @@
+.taskFormContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.buttonGroup {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-top: 5px;
+}
+
+.buttonGroup .taskSubmit {
+	margin-right: 20px;
+}
+
+.buttonGroup .taskClear {
+	margin-left: auto;
+}

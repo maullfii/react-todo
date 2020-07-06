@@ -1,5 +1,7 @@
 import React, { useContext, useState, useEffect } from 'react';
-import { TaskListContext } from '../context/TaskListContext';
+import { TaskListContext } from '../../context/TaskListContext';
+import './TaskForm.css';
+
 const TaskForm = () => {
 	const { addTask, clearList, editItem, editTask } = useContext(TaskListContext);
 
@@ -29,13 +31,13 @@ const TaskForm = () => {
 	}, [editItem]);
 
 	return (
-		<form onSubmit={handleSubmit}>
+		<form className="taskFormContainer" onSubmit={handleSubmit}>
 			<input type="text" onChange={handleChange} value={title} />
-			<div>
-				{editItem === null ? (<button type="submit">Add Task</button>) : (<button type="submit">Edit Task</button>)}
-				<button type="button" onClick={() => clearList()}>Clear</button>
+			<div className="buttonGroup">
+				{editItem === null ? (<button className="taskSubmit" type="submit">Add Task</button>) : (<button className="taskSubmit" type="submit">Edit Task</button>)}
+				<button className="taskClear" type="button" onClick={() => clearList()}>Clear</button>
 			</div>
-		</form >
+		</form>
 	);
 };
 

@@ -1,0 +1,30 @@
+.taskContainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.taskContainer .listTask {
+	list-style: circle;
+	margin-left: -30px;
+	margin-top: 5px;
+}
+
+.taskContainer .listTask .taskItem {
+	font-size: 15pt;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.taskContainer .listTask .taskAction {
+	display: flex;
+	flex-direction: row;
+	margin-top: 5px;
+}
+
+.taskContainer .listTask .taskAction .taskRemove {
+	margin-right: 20px;
+}
+
+.taskContainer .listTask .taskAction .taskEdit {
+	margin-left: auto;
+}
